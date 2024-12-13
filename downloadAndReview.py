@@ -262,13 +262,14 @@ def main():
         click_on_search_result()
         time.sleep(5)
         install_app()
-        time.sleep(120) # Wait for installation to complete
+        time.sleep(120)  # Wait for installation to complete
         scroll_and_click_review()
         time.sleep(3)
         give_five_star_review()
         time.sleep(3)
         write_rating("Great app!", "Awesome features and functionality.")
-
+        time.sleep(3)
+        submit_rating()
     except Exception as e:
         print(f"An error occurred: {e}")
 
